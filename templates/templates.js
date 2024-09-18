@@ -1,27 +1,20 @@
-const constructTSXFileTemplate = ({componentName}) => {
-return `
-import type { FunctionComponent, ReactElement } from 'react';
+const constructTSXFileTemplate = (componentName) => {
+return `import type { FunctionComponent, ReactElement } from 'react';
 
 import styles from './${componentName}.module.css';
 
 interface ${componentName}Props {}
 
 const ${componentName}: FunctionComponent<${componentName}Props> = (): ReactElement => {
-  return (
-    <div className={styles.container}>
-      {/* Your Code */}
-    </div>
-  );
+    return <div className={styles.container}>{/* Your Code */}</div>;
 };
 
-export default $DIRECTORY;
+export default ${componentName};
 `
 }
 
 const constructCSSFileTemplate = () => {
-return `
-.container {}
-`
+return `.container {}`
 }
 
 module.exports = {
