@@ -69,7 +69,7 @@ function activate(context) {
       }
     });
 
-    vscode.window.showInformationMessage(`${modifiedComponentName} directory created successfull with following .tsx and .module.css files`);
+    vscode.window.showInformationMessage(`${modifiedComponentName} directory created successfully with following .tsx and .module.css files`);
 
     } catch(e) {
       console.log(e);
