@@ -2,10 +2,10 @@
   "name": "component-creation",
   "displayName": "Component-Creation",
   "description": "This extension enables us to create a component folder containing .tsx and .module.css files simply by right-clicking the desired folder and selecting the \"Create Component\" option from the menu.",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "publisher": "LokeshBandi",
   "engines": {
-    "vscode": "^1.89.0"
+    "vscode": "^1.89.1"
   },
   "categories": [
     "Other"

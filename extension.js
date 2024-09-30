@@ -25,12 +25,12 @@ function activate(context) {
 
     if (selectedOption) {
       switch(selectedOption.label) {
-        case AVAILABLE_OPTIONS.componentCreation: {
+        case AVAILABLE_OPTIONS.componentCreation.label: {
           vscode.window.showInformationMessage(`You selected: Component Creation`);
           componentCreation(desiredFolderPath);
           break;
         }
-        case AVAILABLE_OPTIONS.newOperatorForTheme: {
+        case AVAILABLE_OPTIONS.newOperatorCreation.label: {
           vscode.window.showInformationMessage(`You selected: New Operator Creation`);
           newOperatorCreation(desiredFolderPath);
           break;
