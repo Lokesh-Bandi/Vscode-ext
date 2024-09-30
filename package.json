@@ -1,8 +1,8 @@
 {
-  "name": "component-creation",
-  "displayName": "Component-Creation",
-  "description": "This extension enables us to create a component folder containing .tsx and .module.css files simply by right-clicking the desired folder and selecting the \"Create Component\" option from the menu.",
-  "version": "0.0.8",
+  "name": "quick-folder-setup",
+  "displayName": "QuickFolderSetup",
+  "description": "This extension enables us to create a base folder setup for selection options simply by right-clicking the desired folder and selecting the \"Create Component\" option from the menu.",
+  "version": "1.0.1",
   "publisher": "LokeshBandi",
   "engines": {
     "vscode": "^1.89.1"
@@ -15,15 +15,15 @@
   "contributes": {
     "commands": [
       {
-        "command": "extension.getActiveFolder",
-        "title": "Create Component"
+        "command": "extension.getActiveFolderForCreation",
+        "title": "Quick Folder Setup"
       }
     ],
     "menus": {
       "explorer/context": [
         {
-          "command": "extension.getActiveFolder",
-          "label": "Create Component",
+          "command": "extension.getActiveFolderForCreation",
+          "label": "Quick Folder Setup",
           "group": "2_modification"
         }
       ]

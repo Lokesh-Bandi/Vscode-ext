@@ -5,7 +5,7 @@ const { AVAILABLE_OPTIONS } = require('./utils/config');
 const vscode = require('vscode');
 
 function activate(context) {
-  let disposable = vscode.commands.registerCommand('extension.getActiveFolder', async (uri) => {
+  let disposable = vscode.commands.registerCommand('extension.getActiveFolderForCreation', async (uri) => {
 
   if (!uri) {
     vscode.window.showWarningMessage('No URI provided.');
