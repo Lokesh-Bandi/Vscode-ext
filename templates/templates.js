@@ -17,7 +17,16 @@ const constructCSSFileTemplate = () => {
 return `.container {}`
 }
 
+const constructOpertorCSSTemplate = () => {
+return `:root {}
+
+html body {
+  visibility: visible;
+}
+`
+}
 module.exports = {
   constructCSSFileTemplate,
-  constructTSXFileTemplate
+  constructTSXFileTemplate,
+  constructOpertorCSSTemplate
 }
