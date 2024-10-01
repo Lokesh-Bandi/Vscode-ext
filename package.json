@@ -1,8 +1,8 @@
 {
   "name": "quick-folder-setup",
   "displayName": "QuickFolderSetup",
-  "description": "This extension enables us to create a base folder setup for selection options simply by right-clicking the desired folder and selecting the \"Create Component\" option from the menu.",
-  "version": "1.0.1",
+  "description": "This extension enables us to create a base folder setup for selected options simply by right-clicking the desired folder and selecting the \"Create Component\" option from the menu.",
+  "version": "1.0.2",
   "publisher": "LokeshBandi",
   "engines": {
     "vscode": "^1.89.1"

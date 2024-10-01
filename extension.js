@@ -1,5 +1,6 @@
 const { componentCreation } = require('./actions/componentCreation');
 const { newOperatorCreation } = require('./actions/newOperatorCreation');
+const { sliceCreation } = require('./actions/sliceCreation');
 const { AVAILABLE_OPTIONS } = require('./utils/config');
 
 const vscode = require('vscode');
@@ -16,6 +17,7 @@ function activate(context) {
   try {
     const options = [
       { label: AVAILABLE_OPTIONS.componentCreation.label, description: AVAILABLE_OPTIONS.componentCreation.desc },
+      { label: AVAILABLE_OPTIONS.sliceCreation.label, description: AVAILABLE_OPTIONS.sliceCreation.desc },
       { label: AVAILABLE_OPTIONS.newOperatorCreation.label, description: AVAILABLE_OPTIONS.newOperatorCreation.desc },
   ];
 
@@ -28,6 +30,11 @@ function activate(context) {
         case AVAILABLE_OPTIONS.componentCreation.label: {
           vscode.window.showInformationMessage(`You selected: Component Creation`);
           componentCreation(desiredFolderPath);
+          break;
+        }
+        case AVAILABLE_OPTIONS.sliceCreation.label: {
+          vscode.window.showInformationMessage(`You selected: Slice Creation`);
+          sliceCreation(desiredFolderPath);
           break;
         }
         case AVAILABLE_OPTIONS.newOperatorCreation.label: {
